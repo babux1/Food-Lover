@@ -148,7 +148,7 @@ export default function DirectoryCard(props) {
               </Typography>
             </DialogContent>
             <DialogActions>
-              <Button autoFocus onClick={ () => (props.addToCollection(props.food))} component={Link} to="/user" variant="outlined" color="primary">
+              <Button autoFocus onClick={ () => (props.addToFavorite(props.food))} component={Link} to="/user" variant="outlined" color="primary">
                 Add to favorite!
               </Button>
             </DialogActions>

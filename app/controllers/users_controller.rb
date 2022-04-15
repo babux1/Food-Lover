@@ -7,7 +7,11 @@ class UsersController < ApplicationController
     end
 
     def show
-        render json: @current_user
+        if current_user
+            render json: current_user, status: :ok
+        else
+            render json: "No current user", status: :unauthorized
+        end
     end
 
     def create
@@ -15,11 +19,7 @@ class UsersController < ApplicationController
     
         session[:user_id] = user.id
         render json: user, status: :created
-        # if user.valid?
-        #     render json: { user: user, status: :created}
-        #   else
-        #     render json: { error: 'failed to create user', status: :not_acceptable}
-        #   end
+       
     end
 
     def user_params

@@ -178,7 +178,7 @@ class FavoriteCard extends React.Component{
           <Button onClick={this.handleAlertClose} className={classes.deleteModalButton} color="#79a67a">
             Wait! No! No I don't!
           </Button>
-          <Button onClick={() => this.props.deleteCollection(this.props.collection)} className={classes.deleteModalButton}color="#79a67a">
+          <Button onClick={() => this.props.deleteFavorite(this.props.favorite)} className={classes.deleteModalButton}color="#79a67a">
             Yes, I deleted it.
           </Button>
         </DialogActions>
