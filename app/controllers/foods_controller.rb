@@ -2,14 +2,14 @@ class FoodsController < ApplicationController
 
     
     def index
-        render json: Food.all
+        render json: Food.all, except: [:created_at, :updated_at]
     end
 
     def show 
         food = Food.find(params[:id])
         render json: food
     end 
-
+  
     def create
         food = Food.create(food_params)
         render json: food
@@ -17,7 +17,7 @@ class FoodsController < ApplicationController
 
     def update
         food = Food.find(params[:id]).update(food_params)
-        render json: plant
+        render json: food
     end 
 
     def destroy 

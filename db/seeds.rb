@@ -2,10 +2,7 @@ User.destroy_all
 Favorite.destroy_all
 Food.destroy_all
 
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+
 puts 'seeding'
 
 10.times do

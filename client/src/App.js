@@ -73,7 +73,10 @@ class App extends React.Component{
    })
 }
   
-
+  logOut = () => {
+    ls.remove('savedUser')
+    this.setState({currentUser: null})
+  }
   
   componentDidMount() {
     Promise.all([fetch(UsersURL), fetch(FoodsURL)])
@@ -110,7 +113,7 @@ class App extends React.Component{
     return filteredfoods
   }
   
-  deleteUserfood = (userfood) => {
+  deleteUserFood = (userfood) => {
     console.log(userfood)
     this.setState({userFavorite: this.state.userFavorite.filter((filteredfood) => filteredfood !== userfood)})
   }
@@ -163,7 +166,7 @@ addTofavorite = (food) =>{
               <UserPage 
                 currentUser={this.state.currentUser} 
                 userFavorite={this.state.userFavorite} 
-                deleteUserfood={this.deleteUserfood} 
+                deleteUserFood={this.deleteUserfood} 
                 setuserFavorite={this.setuserFavorite}
                 hideShell={this.hideShell}
                 assigncontent={this.assigncontent}
