@@ -23,7 +23,7 @@ function LoginPage({ onLogin, setUser }) {
           })
       }
     });
-    navigate("/");
+    navigate("/UserPage"); //if not working change back to "/"
   }
 
   return (

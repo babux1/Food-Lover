@@ -3,6 +3,8 @@ import { Routes, Route, Link } from "react-router-dom";
 import LoginPage from "./components/LoginPage";
 import SignUpForm from "./components/SignupForm";
 import Meal from "./Meal";
+import UserPage from "./components/UserPage";
+import AddFavorite from "./components/AddFavorite";
 
 function App() {
 
@@ -66,6 +68,13 @@ function App() {
             ) : (
               <p>text</p>
             )}
+            <Link to="/UserPage">
+              <button className="Favorites-btn">Favorites</button>
+            </Link>
+            <Link to="/AddFavorite">
+              <button className="Add-Fav-btn">Add Favorite</button>
+            </Link>
+
           </span>
           
 
@@ -73,8 +82,12 @@ function App() {
       </header>
       <div>
         <Routes>
+      
           <Route path="loginpage" element={<LoginPage onLogin={setUser} />} />
-          <Route path="signupform" element={<SignUpForm onLogin={setUser}/>} />
+          <Route path="signupform" element={<SignUpForm onLogin={setUser} />} />
+          <Route path="UserPage" element={<UserPage />} />
+          <Route path="AddFavorite" element={<AddFavorite/>}/>
+          
         </Routes>
       </div>
       <Meal/>
