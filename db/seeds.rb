@@ -14,7 +14,7 @@ puts 'seeding'
 end
 
 Food.create(title: "Bibimbap", category: "Korean", description: "Bibimbap is served as a bowl of warm white rice topped with namul or kimchi and gochujang, soy sauce, or doenjang.", image_url: "https://cdn.asiastreetfood.com/uploads/Bibimbap-einfach-korea-rezept1.jpg?strip=all&lossy=1&quality=80&ssl=1")
-Food.create(title: "Bibimbap", category: "Korean", description: "Bulgogi, literally fire meat, is a gui made of thin, marinated slices of beef or pork grilled on a barbecue or on a stove-top griddle", image_url: "https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/vimdb/270594.jpg")
+Food.create(title: "Bulgogi", category: "Korean", description: "Bulgogi, literally fire meat, is a gui made of thin, marinated slices of beef or pork grilled on a barbecue or on a stove-top griddle", image_url: "https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/vimdb/270594.jpg")
 Food.create(title: "Galbi tang", category: "Korean", description: "Galbi-tang or short rib soup is a variety of guk, or Korean soup, made primarily from beef short ribs along with stewing beef, radish, onions, and other ingredients.", image_url: "https://www.koreanbapsang.com/wp-content/uploads/2020/12/DSC5529-2.jpg")
 
 
@@ -24,7 +24,7 @@ Food.create(title: "Burrito", category: "Mexican", description: "consisting of a
 
 Food.create(title: "Pizza", category: "Italian", description: "round, flat base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients ", image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Pizza_Diavolo.jpg/640px-Pizza_Diavolo.jpg")
 Food.create(title: "Lasagne", category: "Italian", description: "type of pasta, possibly one of the oldest types,[2] made of very wide, flat sheets.", image_url: "https://www.tegut.com/fileadmin/tegut_upload/Rezepte/Lasagne-al-Forno-1920x1080.png")
-Food.create(title: "Ravioli", category: "Italian", description: "type of pasta, possibly one of the oldest types,[2] made of very wide, flat sheets.", image_url: "Ravioli are a type of pasta comprising a filling enveloped in thin pasta dough")
+Food.create(title: "Ravioli", category: "Italian", description: "type of pasta, possibly one of the oldest types,[2] made of very wide, flat sheets.", image_url: "https://www.thereciperebel.com/wp-content/uploads/2021/10/bsked-ravioli-new-www.thereciperebel.com-1200-38-of-47.jpg")
 
 
 10.times do
