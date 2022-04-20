@@ -34,7 +34,9 @@ function AddFavorite() {
               },
               body: JSON.stringify({
                   title:title,
-                  image_url: image_url
+                image_url: image_url,
+                description: description,
+                  category: category
                   
               })
           }).then((resp) => resp.json())
@@ -44,7 +46,7 @@ function AddFavorite() {
       }
 
       return (
-        <div >
+        <div className="Add-Food"  >
           <h1>Add Food</h1>
           <form onSubmit={handleNewFood}>
             <div>
@@ -63,13 +65,16 @@ function AddFavorite() {
             <div>
               <input type="text" title="image" placeholder="Image" value={image_url} onChange={(e)=> setImage_url (e.target.value)} />
             </div>
-            <input type="submit" value="Submit" />
+            <input className="add-submit" type="submit" value="Submit" />
           </form>
+            <div className="AddFavoriteList" style={{ display: "flex", flexWrap: "wrap" , justifyContent: 'space-between', alignItems: 'center',}}>
             {
                 foodList.map((food) => {
                 return <FavoriteCard food={food}/>
               })
             }
+            </div>
+        
               
           
         </div>

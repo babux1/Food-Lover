@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import FavoriteCard from "./FavoriteCard";
 
 
+
 function FavoriteList() {
    
    
@@ -17,9 +18,10 @@ function FavoriteList() {
   }, [])
     
     return (
+
     <main><h1 className="Title" style={{
         textAlign: "center"}}> My Favorite List  </h1>
-      <ul className="cards">
+        <ul className="cards" style={{ display: "flex", flexWrap: "wrap" , justifyContent: 'space-between', alignItems: 'center',}}>
         {food.map((food) => {
           return (<FavoriteCard key={food.id} food={food} />)
         })}

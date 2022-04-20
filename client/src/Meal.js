@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
 const url = 'https://www.themealdb.com/api/json/v1/1/random.php'
-// const url = '/foods'
 
 const Meal = () => {
   const [food, setFood] = useState([])
@@ -25,14 +24,12 @@ const Meal = () => {
       </div>
       <section className="meals">
         {food.map((f) => {
-          // I wonder if there is an easier way to do this...or maybe not destructuring and then using dot notation to access the values...
           const {
             idMeal,
             strMeal,
             strInstructions,
             strMealThumb,
             strTags,
-            // strYouTube,
           } = f
 
           return (
@@ -45,7 +42,7 @@ const Meal = () => {
                   className="underline"
                   style={{ marginBottom: '20px' }}
                 ></div>
-                <img src={strMealThumb} alt={strMeal} />
+                <div className='Generated-food'> <img className='image-food' src={strMealThumb} alt={strMeal} /></div>
 
               </div>
               <div>

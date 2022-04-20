@@ -1,3 +1,165 @@
+*{
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.header{
+  border-bottom: 10px;
+}
+
+.header-h1{
+  text-align: center;
+}
+
+.text-2xl{
+  text-align: center;
+}
+.Generated-food{
+  text-align: center;
+}
+
+.Add-Fav-btn  {
+  transition-duration: 0.4s;
+  background-color: white;
+  color: black;
+  border: 2px solid rgb(0, 128, 255);
+  margin-left :5px;
+  border-radius: 8px;
+}
+.Favorites-btn{
+  transition-duration: 0.4s;
+  background-color: white;
+  color: black;
+  border: 2px solid rgb(0, 128, 255);
+  border-radius: 8px;
+}
+
+.Add-Fav-btn:hover {
+  background-color:  rgb(0, 128, 255);
+  color: white;
+}
+
+.Favorites-btn:hover {
+  background-color:  rgb(0, 128, 255);
+  color: white;
+  
+}
+
+.Favorites-header{
+  position:absolute; left:50px; top:55px;
+}
+
+
+
+
 .button {
   text-align: center;
+}
+
+
+.login-btn:hover {
+  background-color:  rgb(0, 128, 255);
+  color: white;
+}
+
+.login-btn{
+  transition-duration: 0.4s;
+  background-color: white;
+  color: black;
+  border: 2px solid rgb(0, 128, 255);
+  margin-left :5px;
+  border-radius: 8px;
+}
+
+.welcome-user {
+font-size: 25px;
+color: rgb(0, 128, 255);
+text-align: right;
+padding-right: 20px;
+
+}
+
+.btn-wrapper{
+  text-align: right;
+  padding-right: 25px;
+}
+
+.card {
+  width:20rem;
+  text-align: center;
+  display:flex;
+  width: 320px;
+  height: 415px;
+  padding: 0%;
+ margin-bottom: 20px;
+}
+
+.card-image{
+  object-fit:cover
+}
+
+
+.Add-Food {
+  text-align: center;
+}
+
+.add-submit{
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.add-submit{
+  transition-duration: 0.4s;
+  background-color: white;
+  color: black;
+  border: 2px solid rgb(0, 128, 255);
+  margin-left :5px;
+  border-radius: 8px;
+}
+
+.add-submit:hover {
+  background-color:  rgb(0, 128, 255);
+  color: white;
+}
+
+
+.image-food{
+  width: 25%;
+  height: auto;
+  border: 10px solid white;
+  border-radius: 8px;
+}
+
+
+.create-post-btn{
+  transition-duration: 0.4s;
+  background-color: white;
+  color: black;
+  border: 2px solid rgb(0, 128, 255);
+  /* margin-left :650px; */
+  border-radius: 8px;
+}
+
+
+.create-post-btn:hover {
+  background-color:  rgb(0, 128, 255);
+  color: white;
+}
+
+
+.create-post-form{
+  margin-left: 10px;
+}
+
+.App{
+background-image: linear-gradient(-45deg, #f5b105fb, #02d1ff);
+overflow:auto;
+}
+
+.cards{
+  padding-right: 32px;
+}
+
+.description{
+  padding: 2px;
 }
