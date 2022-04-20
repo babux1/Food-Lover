@@ -37,7 +37,7 @@ function App() {
       <header className="header">
         <div className="header-left">
           <a href="/">
-            <h1>Food Lover</h1>
+            <h1 className="header-h1">Food Lover</h1>
           </a>
         </div>
 
@@ -61,19 +61,21 @@ function App() {
           <span className="user-profile">
             {user ? (
               <span>
-                <p>
+                <p className="welcome-user">
                   Welcome, <strong>{user.username}</strong>!
                 </p>
               </span>
             ) : (
-              <p>text</p>
+              <p></p>
             )}
+            <div className="Favorites-header">
             <Link to="/UserPage">
               <button className="Favorites-btn">Favorites</button>
             </Link>
             <Link to="/AddFavorite">
               <button className="Add-Fav-btn">Add Favorite</button>
             </Link>
+            </div>
 
           </span>
           
